@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What does PPDC stand for?</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://unpkg.com/vue"></script>
@@ -15,29 +16,29 @@
         <h1>What does PPDC stand for?</h1>
         <div id="app">
             <p class="fs-3">{{ header }}</p>
-                <transition appear name="slide-fade" mode="out-in">
-                    <div :key="pa">
-                        <h1 class="text-capitalize display-1">{{ pa }}</h1>
-                    </div>
-                </transition>
-                <transition appear name="slide-fade" mode="out-in">
-                    <div :key="pn">
-                        <h1 class="text-capitalize display-1">{{ pn }}</h1>
-                    </div>
-                </transition>
-                <transition appear name="slide-fade" mode="out-in">
-                    <div :key="dn">
-                        <h1 class="text-capitalize display-1">{{ dn }}</h1>
-                    </div>
-                </transition>
-                <transition appear name="slide-fade" mode="out-in">
-                    <div :key="cn">
-                        <h1 class="text-capitalize display-1 mb-3">{{ cn }}</h1>
-                    </div>
-                </transition>
-                <a href="javascript:void(0);" @click="generate" type="button" class="fs-3">
-                    {{ buttonText }}
-                </a>
+            <transition appear name="slide-fade" mode="out-in">
+                <div :key="pa">
+                    <h1 class="text-capitalize display-1">{{ pa }}</h1>
+                </div>
+            </transition>
+            <transition appear name="slide-fade" mode="out-in">
+                <div :key="pn">
+                    <h1 class="text-capitalize display-1">{{ pn }}</h1>
+                </div>
+            </transition>
+            <transition appear name="slide-fade" mode="out-in">
+                <div :key="dn">
+                    <h1 class="text-capitalize display-1">{{ dn }}</h1>
+                </div>
+            </transition>
+            <transition appear name="slide-fade" mode="out-in">
+                <div :key="cn">
+                    <h1 class="text-capitalize display-1 mb-3">{{ cn }}</h1>
+                </div>
+            </transition>
+            <a href="javascript:void(0);" @click="generate" class="fs-3">
+                {{ buttonText }}
+            </a>
         </div>
     </div>
     <script src='list.js'></script>
