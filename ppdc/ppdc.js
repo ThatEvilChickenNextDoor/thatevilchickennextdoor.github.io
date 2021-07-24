@@ -22,6 +22,12 @@ var app = new Vue({
             this.pn = randomize(P2, this.pn);
             this.dn = randomize(D, this.dn);
             this.cn = randomize(C, this.cn);
+            if (this.pa == 'pomu' && this.pn == 'power' && this.dn == 'distribution' && this.cn == 'center') {
+                this.buttonText = "Wow, you actually found it";
+                this.header = "It stood for:";
+                alert('You found it.');
+                return;
+            }
             this.buttonText = randomize(B, this.buttonText);
             this.header = randomize(H, this.header);
         }
